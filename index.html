@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
     <title>RA KURD . IPA | Yousif Duski</title>
     <style>
         body { 
@@ -52,6 +49,7 @@
             border: 2px solid #f1c40f; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
             text-align: center;
+            transition: 0.3s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -75,19 +73,24 @@
         }
 
         /* ستایلێ دوگمەیان */
-        .btn-group { display: flex; flex-direction: column; gap: 10px; }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
         .btn { 
             background: linear-gradient(45deg, #f1c40f, #d4ac0d);
             color: black; 
-            padding: 10px 0; 
+            padding: 12px 0; 
             text-decoration: none; 
             border-radius: 50px; 
             font-weight: bold; 
+            display: block;
             transition: 0.3s;
         }
 
-        .btn.direct {
+        .btn-ipa {
             background: transparent;
             color: #f1c40f;
             border: 2px solid #f1c40f;
@@ -117,20 +120,19 @@
                 <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
                     <h4 style="margin: 0 0 5px 0; color: #f1c40f;">🛒 ستۆرا بێ بەرامبەر:</h4>
-                    ١. بچۆ ناڤ Shop.<br>
-                    ٢. کلیک ل سەر کڕینێ بکە.<br>
-                    ٣. کلیک ل <b>Cancel</b> بکە.
+                    ١. کلیک ل سەر کڕینێ بکە.<br>
+                    ٢. ل سەر Apple ID کلیک ل <b>Cancel</b> بکە.
                 </div>
             </div>
             <div class="btn-group">
-                <a href="itms-services://?action=download-manifest&url=لینکێ_PLIST_لێرە_دابنێ" class="btn">Direct Install</a>
-                <a href="https://www.mediafire.com/file/qznx5vcgxo42l00/Pizza+Ready+-+RA+KURD+.+Ipa_51.4.0_1774285045.ipa/file" class="btn direct">Download IPA</a>
+               <a href="itms-services://?action=download-manifest&url=https://yduski642-sketch.github.io/RA-KURD-IPA/pizza.plist" class="btn">Direct Install</a>
+                <a href="https://www.mediafire.com/file/qznx5vcgxo42l00/Pizza+Ready+-+RA+KURD+.+Ipa_51.4.0_1774285045.ipa/file" class="btn btn-ipa">Download IPA</a>
             </div>
         </div>
 
         <div class="box app-item">
             <div>
-                <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img" alt="PicsArt">
+                <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img" alt="PicsArt VIP">
                 <h2>PicsArt VIP</h2>
                 <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
@@ -140,16 +142,17 @@
                 </div>
             </div>
             <div class="btn-group">
-                <a href="itms-services://?action=download-manifest&url=https://yduski642-sketch.github.io/RA-KURD-IPA/pizza.plist" class="btn">Direct Install</a>
-                <a href="https://www.mediafire.com/file/qznx5vcgxo42l00/PicsArt+VIP+-+RA+KURD+.+Ipa_51.4.0_1774285045.ipa/file" class="btn direct">Download IPA</a>
+                <a href="itms-services://?action=download-manifest&url=لینکێ_PLIST_لێرە_دابنێ" class="btn">Direct Install</a>
+                <a href="لینکێ_IPA_لێرە_دابنێ" class="btn btn-ipa">Download IPA</a>
             </div>
         </div>
 
     </div>
 
     <div style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px dashed #f1c40f;">
-        <p style="font-size: 16px; color: #f1c40f; font-weight: bold; margin-bottom: 15px;">ژمارەیا سەرەدانکەران:</p>
+        <p style="font-size: 16px; color: #f1c40f; font-weight: bold; margin-bottom: 15px;">ژمارەیا سەرەدانکەران (Visitors):</p>
         <img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fyousif-duski.github.io&label=RA%20KURD&labelColor=%23000000&countColor=%23f1c40f&style=flat-square" alt="Visitor Count">
+        <p style="margin-top: 20px; font-size: 12px; color: #666;">© 2026 RA KURD . IPA | Modded by Yousif Duski</p>
     </div>
 
     <script>
@@ -162,5 +165,6 @@
             }
         }
     </script>
+
 </body>
 </html>
