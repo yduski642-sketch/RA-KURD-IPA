@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="ku" dir="rtl">
 <head>
@@ -11,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" href="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <title>RA KURD . IPA | Yousif Duski</title>
     <style>
         body { 
@@ -23,7 +18,6 @@
 
         h1.main-title { color: #f1c40f; font-size: 2.5rem; text-align: center; margin-bottom: 20px; }
 
-        /* ستایلێ سێرچێ */
         .search-wrapper {
             max-width: 500px;
             margin: 0 auto 40px auto;
@@ -43,8 +37,6 @@
             box-sizing: border-box;
         }
 
-        #searchBar::placeholder { color: #888; }
-
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -60,7 +52,6 @@
             border: 2px solid #f1c40f; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
             text-align: center;
-            transition: 0.3s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -70,11 +61,8 @@
             width: 90px; 
             height: 90px;
             border-radius: 20px; 
-            box-shadow: 0 0 15px rgba(241, 196, 15, 0.3);
             margin: 0 auto 15px auto;
         }
-
-        .box h2 { color: #f1c40f; font-size: 1.5rem; margin: 10px 0; }
 
         .instruction-card {
             background: rgba(241, 196, 15, 0.05); 
@@ -86,21 +74,29 @@
             margin-bottom: 15px;
         }
 
+        /* ستایلێ دوگمەیان */
+        .btn-group { display: flex; flex-direction: column; gap: 10px; }
+
         .btn { 
             background: linear-gradient(45deg, #f1c40f, #d4ac0d);
             color: black; 
-            padding: 12px 0; 
+            padding: 10px 0; 
             text-decoration: none; 
             border-radius: 50px; 
             font-weight: bold; 
-            display: block;
-            width: 100%;
             transition: 0.3s;
         }
 
+        .btn.direct {
+            background: transparent;
+            color: #f1c40f;
+            border: 2px solid #f1c40f;
+        }
+
+        .btn:active { transform: scale(0.95); }
+
         @media (max-width: 650px) {
             .container { grid-template-columns: 1fr; }
-            .box { width: 95%; margin: 0 auto; }
         }
     </style>
 </head>
@@ -123,53 +119,48 @@
                     <h4 style="margin: 0 0 5px 0; color: #f1c40f;">🛒 ستۆرا بێ بەرامبەر:</h4>
                     ١. بچۆ ناڤ Shop.<br>
                     ٢. کلیک ل سەر کڕینێ بکە.<br>
-                    ٣. ل سەر Apple ID کلیک ل <b>Cancel</b> بکە.
+                    ٣. کلیک ل <b>Cancel</b> بکە.
                 </div>
             </div>
-            <a href="https://www.mediafire.com/file/qznx5vcgxo42l00/Pizza+Ready+-+RA+KURD+.+Ipa_51.4.0_1774285045.ipa/file" class="btn">دابەزاندنا IPA</a>
+            <div class="btn-group">
+                <a href="itms-services://?action=download-manifest&url=لینکێ_PLIST_لێرە_دابنێ" class="btn">Direct Install</a>
+                <a href="https://www.mediafire.com/file/qznx5vcgxo42l00/Pizza+Ready+-+RA+KURD+.+Ipa_51.4.0_1774285045.ipa/file" class="btn direct">Download IPA</a>
+            </div>
         </div>
 
         <div class="box app-item">
             <div>
-                <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img" alt="PicsArt Mod by Yousif Duski">
-                <h2>picsArt VIP</h2>
+                <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img" alt="PicsArt">
+                <h2>PicsArt VIP</h2>
                 <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
                     <h4 style="margin: 0 0 5px 0; color: #f1c40f;">💎 تایبەتمەندی VIP:</h4>
                     ✅ هەمی فلتەر (Unlocked)<br>
-                    ✅ فۆنتێن بەلاش (Free)<br>
                     ✅ بێی چ ریکلام (No Ads)
                 </div>
             </div>
-            <a href="#" class="btn">دابەزاندنا IPA</a>
+            <div class="btn-group">
+                <a href="itms-services://?action=download-manifest&url=لینکێ_PLIST_لێرە_دابنێ" class="btn">Direct Install</a>
+                <a href="#" class="btn direct">Download IPA</a>
+            </div>
         </div>
 
     </div>
 
     <div style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px dashed #f1c40f;">
-        <p style="font-size: 16px; color: #f1c40f; font-weight: bold; margin-bottom: 15px;">ژمارەیا سەرەدانکەران (Visitors):</p>
+        <p style="font-size: 16px; color: #f1c40f; font-weight: bold; margin-bottom: 15px;">ژمارەیا سەرەدانکەران:</p>
         <img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fyousif-duski.github.io&label=RA%20KURD&labelColor=%23000000&countColor=%23f1c40f&style=flat-square" alt="Visitor Count">
-        <div style="margin-top: 20px; font-size: 12px; color: #666;">
-            <p>© 2026 RA KURD . IPA | Modded by Yousif Duski</p>
-        </div>
     </div>
 
     <script>
         function searchApps() {
             let input = document.getElementById('searchBar').value.toLowerCase();
             let apps = document.getElementsByClassName('app-item');
-            
             for (let i = 0; i < apps.length; i++) {
                 let title = apps[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
-                if (title.includes(input)) {
-                    apps[i].style.display = "flex";
-                } else {
-                    apps[i].style.display = "none";
-                }
+                apps[i].style.display = title.includes(input) ? "flex" : "none";
             }
         }
     </script>
-
-
 </body>
 </html>
