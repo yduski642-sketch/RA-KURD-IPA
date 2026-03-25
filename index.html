@@ -5,113 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RA KURD . store | Yousif Duski</title>
     <style>
-        body { background-color: #0b0b0b; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
-        h1.main-title { color: #f1c40f; font-size: 2.5rem; text-align: center; margin-bottom: 20px; }
-        
-        .tab-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
-        .tab-btn { padding: 10px 25px; border-radius: 50px; border: 2px solid #f1c40f; background: transparent; color: #f1c40f; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        .tab-btn.active { background: #f1c40f; color: black; }
-
-        .search-wrapper { max-width: 500px; margin: 0 auto 40px auto; position: relative; }
-        #searchBar { width: 100%; padding: 12px 20px; font-size: 16px; border-radius: 50px; border: 2px solid #f1c40f; background: #1a1a1a; color: white; outline: none; text-align: right; box-sizing: border-box; }
-        
-        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
-        .box { background: #1a1a1a; border-radius: 25px; padding: 20px; border: 2px solid #f1c40f; box-shadow: 0 10px 20px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
-        
-        .logo-img { width: 90px; height: 90px; border-radius: 20px; margin: 0 auto 15px auto; }
-        .instruction-card { background: rgba(241, 196, 15, 0.05); padding: 15px; border-radius: 15px; border-right: 4px solid #f1c40f; text-align: right; font-size: 0.85rem; margin-bottom: 15px; }
-        
-        .btn-group { display: flex; flex-direction: column; gap: 10px; }
-        .btn { background: linear-gradient(45deg, #f1c40f, #d4ac0d); color: black; padding: 12px 0; text-decoration: none; border-radius: 50px; font-weight: bold; display: block; transition: 0.3s; }
-        
-        .hidden { display: none; }
-        @media (max-width: 650px) { .container { grid-template-columns: 1fr; } }
+        body { background-color: #0b0b0b; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; text-align: center; }
+        .main-title { color: #f1c40f; font-size: 2.2rem; margin-bottom: 30px; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 800px; margin: 0 auto; }
+        .box { background: #1a1a1a; border-radius: 20px; padding: 20px; border: 1.5px solid #f1c40f; transition: 0.3s; }
+        .logo-img { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 10px; }
+        .btn { background: #f1c40f; color: black; padding: 12px; text-decoration: none; border-radius: 50px; font-weight: bold; display: block; margin-top: 15px; transition: 0.3s; }
+        .btn:active { transform: scale(0.95); }
+        h2 { font-size: 1.2rem; margin: 10px 0; }
+        p { font-size: 0.8rem; color: #aaa; }
     </style>
 </head>
 <body>
 
     <h1 class="main-title">RA KURD . store</h1>
 
-    <div class="tab-container">
-        <button class="tab-btn active" id="ios-btn" onclick="showPlatform('ios')">iOS (IPA)</button>
-        <button class="tab-btn" id="android-btn" onclick="showPlatform('android')">Android (APK)</button>
-    </div>
-
-    <div class="search-wrapper">
-        <input type="text" id="searchBar" onkeyup="searchApps()" placeholder="لێرە بگەڕێ...">
-    </div>
-
-    <div id="ios-section" class="container">
-        <div class="box app-item">
-            <div>
-                <img src="https://i.postimg.cc/QHPPVXsq/unnamed.png" class="logo-img">
-                <h2>Pizza Ready Mod</h2>
-                <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
-            </div>
-            <div class="btn-group">
-                <a href="https://yduski642-sketch.github.io/RA-KURD-IPA/Pizza.Ready.ipa" class="btn">Download IPA</a>
-            </div>
+    <div class="container">
+        <div class="box">
+            <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img">
+            <h2>PicsArt VIP</h2>
+            <p>Modded by Yousif Duski</p>
+            <a href="https://yduski642-sketch.github.io/RA-KURD-IPA/PicsArt%20-%20yousif.duski.ipa_29.1.2_1774433381.ipa" class="btn">Download IPA</a>
         </div>
 
-        <div class="box app-item">
-            <div>
-                <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img">
-                <h2>PicsArt VIP</h2>
-                <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
-            </div>
-            <div class="btn-group">
-                <a href="https://yduski642-sketch.github.io/RA-KURD-IPA/PicsArt%20-%20yousif.duski.ipa_29.1.2_1774433381.ipa" class="btn">Download IPA</a>
-            </div>
+        <div class="box">
+            <img src="https://i.postimg.cc/QHPPVXsq/unnamed.png" class="logo-img">
+            <h2>Pizza Ready Mod</h2>
+            <p>Modded by Yousif Duski</p>
+            <a href="https://yduski642-sketch.github.io/RA-KURD-IPA/Pizza.Ready.ipa" class="btn">Download IPA</a>
         </div>
     </div>
 
-    <div id="android-section" class="container hidden">
-        <div class="box app-item">
-            <div>
-                <img src="https://i.postimg.cc/QHPPVXsq/unnamed.png" class="logo-img">
-                <h2>Pizza Ready APK</h2>
-                <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
-            </div>
-            <div class="btn-group">
-                <a href="#" class="btn" style="background: #a2f10f;">Download APK</a>
-            </div>
-        </div>
-    </div>
-
-    <div style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px dashed #f1c40f;">
-        <p style="font-size: 16px; color: #f1c40f; font-weight: bold;">Visitors:</p>
+    <div style="margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
         <img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fyduski642-sketch.github.io%2FRA-KURD-IPA%2F&countColor=%23f1c40f&style=flat-square">
-        <p style="margin-top: 20px; font-size: 12px; color: #666;">© 2026 RA KURD | Modded by Yousif Duski</p>
+        <p>© 2026 | Modded by Yousif Duski</p>
     </div>
 
-    <script>
-        function showPlatform(platform) {
-            const iosSec = document.getElementById('ios-section');
-            const andSec = document.getElementById('android-section');
-            const iosBtn = document.getElementById('ios-btn');
-            const andBtn = document.getElementById('android-btn');
-
-            if(platform === 'ios') {
-                iosSec.classList.remove('hidden');
-                andSec.classList.add('hidden');
-                iosBtn.classList.add('active');
-                andBtn.classList.remove('active');
-            } else {
-                iosSec.classList.add('hidden');
-                andSec.classList.remove('hidden');
-                andBtn.classList.add('active');
-                iosBtn.classList.remove('active');
-            }
-        }
-
-        function searchApps() {
-            let input = document.getElementById('searchBar').value.toLowerCase();
-            let apps = document.getElementsByClassName('app-item');
-            for (let i = 0; i < apps.length; i++) {
-                let title = apps[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
-                apps[i].style.display = title.includes(input) ? "flex" : "none";
-            }
-        }
-    </script>
 </body>
 </html>
