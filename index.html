@@ -3,46 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RA KURD . IPA | Yousif Duski</title>
+    <title>RA KURD . store | Yousif Duski</title>
     <style>
         body { background-color: #0b0b0b; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
-        h1.main-title { color: #f1c40f; font-size: 2.5rem; text-align: center; margin-bottom: 20px; }
+        h1.main-title { color: #f1c40f; font-size: 2.5rem; text-align: center; margin-bottom: 20px; text-shadow: 0 0 10px rgba(241, 196, 15, 0.3); }
         
-        /* ستایلی تاتبەکان (Tabs) */
         .tab-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
         .tab-btn { padding: 10px 25px; border-radius: 50px; border: 2px solid #f1c40f; background: transparent; color: #f1c40f; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        .tab-btn.active { background: #f1c40f; color: black; }
+        .tab-btn.active { background: #f1c40f; color: black; box-shadow: 0 0 15px rgba(241, 196, 15, 0.5); }
 
         .search-wrapper { max-width: 500px; margin: 0 auto 40px auto; position: relative; }
-        #searchBar { width: 100%; padding: 12px 20px; font-size: 16px; border-radius: 50px; border: 2px solid #f1c40f; background: #1a1a1a; color: white; outline: none; text-align: right; box-sizing: border-box; }
+        #searchBar { width: 100%; padding: 12px 20px; font-size: 16px; border-radius: 50px; border: 2px solid #f1c40f; background: #1a1a1a; color: white; outline: none; text-align: right; box-sizing: border-box; transition: 0.3s; }
+        #searchBar:focus { box-shadow: 0 0 15px rgba(241, 196, 15, 0.4); }
         
         .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
-        .box { background: #1a1a1a; border-radius: 25px; padding: 20px; border: 2px solid #f1c40f; box-shadow: 0 10px 20px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+        .box { background: #1a1a1a; border-radius: 25px; padding: 20px; border: 2px solid #f1c40f; box-shadow: 0 10px 20px rgba(0,0,0,0.5); text-align: center; display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s; }
+        .box:hover { transform: translateY(-5px); }
         
-        .logo-img { width: 90px; height: 90px; border-radius: 20px; margin: 0 auto 15px auto; }
-        .instruction-card { background: rgba(241, 196, 15, 0.05); padding: 15px; border-radius: 15px; border-right: 4px solid #f1c40f; text-align: right; font-size: 0.85rem; margin-bottom: 15px; }
+        .logo-img { width: 90px; height: 90px; border-radius: 22px; margin: 0 auto 15px auto; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .instruction-card { background: rgba(241, 196, 15, 0.05); padding: 15px; border-radius: 18px; border-right: 4px solid #f1c40f; text-align: right; font-size: 0.85rem; margin-bottom: 15px; }
         
         .btn-group { display: flex; flex-direction: column; gap: 10px; }
         .btn { background: linear-gradient(45deg, #f1c40f, #d4ac0d); color: black; padding: 12px 0; text-decoration: none; border-radius: 50px; font-weight: bold; display: block; transition: 0.3s; }
+        .btn:hover { opacity: 0.9; transform: scale(1.02); }
         .btn-ipa { background: transparent; color: #f1c40f; border: 2px solid #f1c40f; }
         
-        /* شاردنەوەی بەشەکان */
-        .hidden { display: none; }
+        .hidden { display: none !important; }
         
         @media (max-width: 650px) { .container { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-    <h1 class="main-title">RA KURD . IPA</h1>
+    <h1 class="main-title">RA KURD . store</h1>
 
     <div class="tab-container">
-        <button class="tab-btn active" onclick="showPlatform('ios')">iOS (IPA)</button>
-        <button class="tab-btn" onclick="showPlatform('android')">Android (APK)</button>
+        <button class="tab-btn active" id="ios-btn" onclick="showPlatform('ios')">iOS (IPA)</button>
+        <button class="tab-btn" id="android-btn" onclick="showPlatform('android')">Android (APK)</button>
     </div>
 
     <div class="search-wrapper">
-        <input type="text" id="searchBar" onkeyup="searchApps()" placeholder="لێرە بگەڕێ...">
+        <input type="text" id="searchBar" onkeyup="searchApps()" placeholder="لێرە بگەڕێ بۆ بەرنامەکان...">
     </div>
 
     <div id="ios-section" class="container">
@@ -57,10 +58,24 @@
                 </div>
             </div>
             <div class="btn-group">
-                <a href="itms-services://?action=download-manifest&url=https://yduski642-sketch.github.io/RA-KURD-IPA/pizza.plist" class="btn">Direct Install</a>
                 <a href="https://yduski642-sketch.github.io/RA-KURD-IPA/Pizza.Ready.ipa" class="btn btn-ipa">Download IPA</a>
             </div>
         </div>
+
+        <div class="box app-item">
+    <div>
+        <img src="https://i.postimg.cc/qgHdBYW2/abfbc85d-be1d-4b24-85af-6bff2d581550.png" class="logo-img">
+        <h2>PicsArt VIP (29.1.2)</h2>
+        <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
+        <div class="instruction-card">
+            <h4 style="margin: 0; color: #f1c40f;">💎 ڤێرژنی نوێ:</h4>
+            ✅ هەموو تایبەتمەندییەکان کراوەن.
+        </div>
+    </div>
+    <div class="btn-group">
+        <a href="https://yduski642-sketch.github.io/RA-KURD-IPA/PicsArt_New.ipa" class="btn btn-ipa">Download IPA</a>
+    </div>
+</div>
     </div>
 
     <div id="android-section" class="container hidden">
@@ -69,13 +84,13 @@
                 <img src="https://i.postimg.cc/QHPPVXsq/unnamed.png" class="logo-img">
                 <h2>Pizza Ready APK</h2>
                 <p style="font-size: 0.8rem; opacity: 0.7;">Mod by: Yousif Duski</p>
-                <div class="instruction-card">
+                <div class="instruction-card" style="border-right-color: #a2f10f;">
                     <h4 style="margin: 0; color: #a2f10f;">🤖 مۆدی ئەندرۆید:</h4>
                     ✅ پارەی بێسنوور (Unlimited Money)
                 </div>
             </div>
             <div class="btn-group">
-                <a href="لینکێ_APK_لێرە_دابنێ" class="btn" style="background: #a2f10f;">Download APK</a>
+                <a href="#" class="btn" style="background: linear-gradient(45deg, #a2f10f, #82c40c);">Download APK</a>
             </div>
         </div>
     </div>
@@ -88,16 +103,21 @@
 
     <script>
         function showPlatform(platform) {
-            document.getElementById('ios-section').classList.add('hidden');
-            document.getElementById('android-section').classList.add('hidden');
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            const iosSection = document.getElementById('ios-section');
+            const androidSection = document.getElementById('android-section');
+            const iosBtn = document.getElementById('ios-btn');
+            const androidBtn = document.getElementById('android-btn');
 
             if(platform === 'ios') {
-                document.getElementById('ios-section').classList.remove('hidden');
-                event.target.classList.add('active');
+                iosSection.classList.remove('hidden');
+                androidSection.classList.add('hidden');
+                iosBtn.classList.add('active');
+                androidBtn.classList.remove('active');
             } else {
-                document.getElementById('android-section').classList.remove('hidden');
-                event.target.classList.add('active');
+                iosSection.classList.add('hidden');
+                androidSection.classList.remove('hidden');
+                androidBtn.classList.add('active');
+                iosBtn.classList.remove('active');
             }
         }
 
