@@ -80,7 +80,7 @@
             display: flex; 
             flex-direction: column; 
             justify-content: space-between;
-            min-height: 500px; /* Zێدەکر شوون چۆنکە دوگمە زێدە بوون */
+            min-height: 440px;
             transition: 0.4s;
         }
         .box:hover { transform: translateY(-8px); }
@@ -92,24 +92,20 @@
 
         .instruction-card { 
             background: rgba(241, 196, 15, 0.06); 
-            padding: 12px; 
+            padding: 15px; 
             border-radius: 18px; 
             border-right: 5px solid var(--border-color); 
             text-align: right; 
-            font-size: 0.85rem; 
-            margin-bottom: 15px;
-            line-height: 1.6;
+            font-size: 0.9rem; 
+            margin-bottom: 20px;
+            line-height: 1.7;
             color: var(--text-color);
         }
         
-        .btn-group { display: flex; flex-direction: column; gap: 8px; }
-        .btn { background: transparent; color: var(--border-color); padding: 11px 0; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 0.9rem; transition: 0.3s; border: 2px solid var(--border-color); cursor: pointer; display: block; }
+        .btn-group { display: flex; flex-direction: column; gap: 12px; }
+        .btn { background: transparent; color: var(--border-color); padding: 13px 0; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1rem; transition: 0.3s; border: 2px solid var(--border-color); cursor: pointer; display: block; }
         .btn:hover { background: var(--border-color); color: #000; }
         
-        /* ستایلێ تایبەت بۆ دوگمەیێن iOS */
-        .btn-install { background: var(--border-color); color: #000; }
-        .btn-esign { background: #333; color: #fff; border: 1px solid #555; }
-
         .hidden { display: none !important; }
         
         @media (max-width: 480px) { 
@@ -148,83 +144,84 @@
 
     <div id="ios-section" class="container">
 
-        <div class="box app-item" data-type="game">
-            <div>
-                <img src="https://i.postimg.cc/g2sBR1tw/unnamed-(6).jpg" class="logo-img">
-                <h2>Traffic racer pro mod</h2>
-                <p class="mod-by">Mod by: Yousif Duski</p>
-                <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">⚔️ تایبەتمەندی:</h4>
-                    ✅ پارێ بێسنوور | ✅ ترومبێل ڤکرینە
-                </div>
-            </div>
-            <div class="btn-group">
-                <a href="itms-services://?action=download-manifest&url=لینکێ_فایلی_PLIST_یێ_تە" class="btn btn-install">Direct Install (Home Screen)</a>
-                <a href="esign://download?url=https://github.com/yduski642-sketch/RA-KURD-IPA/releases/download/v2.1.1/Traffic.Racer.Pro_2.1.2_1776013338.ipa" class="btn btn-esign">Install via ESign</a>
-                <a href="https://github.com/yduski642-sketch/RA-KURD-IPA/releases/download/v2.1.1/Traffic.Racer.Pro_2.1.2_1776013338.ipa" class="btn">Download IPA File</a>
-            </div>
+     <div class="box app-item" data-type="game">
+    <div>
+        <img src="https://i.postimg.cc/g2sBR1tw/unnamed-(6).jpg" class="logo-img">
+        <h2>Traffic racer pro mod</h2>
+        <p class="mod-by">Mod by: Yousif Duski</p>
+        <div class="instruction-card">
+            <h4 style="margin: 0 0 5px 0; color: var(--border-color);">⚔️ تایبەتمەندی:</h4>
+            <br>✅ پارێ بێسنوور | ✅ هەمی ترومبێل د ڤکرینە
         </div>
+    </div>
+    <div class="btn-group">
+        <a href="https://github.com/yduski642-sketch/RA-KURD-IPA/releases/download/v2.1.1/Traffic.Racer.Pro_2.1.2_1776013338.ipa" class="btn">Download IPA (252.3 MB)</a>
+    </div>
+</div>
+
+
+      <div class="box app-item" data-type="game">
+    <div>
+        <img src="https://i.postimg.cc/8zYz1Xd5/unnamed-(5).jpg" class="logo-img">
+        <h2>red dead redemption</h2>
+        <p class="mod-by">Mod by: Yousif Duski</p>
+        <div class="instruction-card">
+            <h4 style="margin: 0 0 5px 0; color: var(--border-color);">⚔️ تایبەتمەندی:</h4>
+            <br>✅ رێدێد بەلاش (Free)
+        </div>
+    </div>
+    <div class="btn-group">
+        <a href="https://www.mediafire.com/file/20ofpamksbll1gv/Red+Dead+Redemption+Free.ipa/file" class="btn">Download IPA (2.69 GB)</a>
+    </div>
+</div>
 
         <div class="box app-item" data-type="game">
-            <div>
-                <img src="https://i.postimg.cc/8zYz1Xd5/unnamed-(5).jpg" class="logo-img">
-                <h2>red dead redemption</h2>
-                <p class="mod-by">Mod by: Yousif Duski</p>
-                <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">⚔️ تایبەتمەندی:</h4>
-                    ✅ رێدێد بەلاش (Free)
-                </div>
-            </div>
-            <div class="btn-group">
-                <a href="esign://download?url=https://www.mediafire.com/file/20ofpamksbll1gv/Red+Dead+Redemption+Free.ipa/file" class="btn btn-esign">Install via ESign</a>
-                <a href="https://www.mediafire.com/file/20ofpamksbll1gv/Red+Dead+Redemption+Free.ipa/file" class="btn">Download IPA (2.69 GB)</a>
-            </div>
+    <div>
+        <img src="https://i.postimg.cc/QMV2gqVt/unnamed-(3).jpg" class="logo-img">
+        <h2>Clash of Clans Mod</h2>
+        <p class="mod-by">Mod by: Yousif Duski</p>
+        <div class="instruction-card">
+            <h4 style="margin: 0 0 5px 0; color: var(--border-color);">⚔️ تایبەتمەندی:</h4>
+            ✅ پارە و ئەڵماس بێسنوور (Unlimited)
+            <br>✅ سێرڤەرێ تایبەت (Private Server)
+            <br>✅ هەمی سەرباز ڤکرینە
         </div>
-
-        <div class="box app-item" data-type="game">
-            <div>
-                <img src="https://i.postimg.cc/QMV2gqVt/unnamed-(3).jpg" class="logo-img">
-                <h2>Clash of Clans Mod</h2>
-                <p class="mod-by">Mod by: Yousif Duski</p>
-                <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">⚔️ تایبەتمەندی:</h4>
-                    ✅ پارە و ئەڵماس بێسنوور
-                </div>
-            </div>
-            <div class="btn-group">
-                <a href="esign://download?url=https://url-shortener.me/J8X6" class="btn btn-esign">Install via ESign</a>
-                <a href="https://url-shortener.me/J8X6" class="btn">Download IPA (367 MB)</a>
-            </div>
-        </div>
-
+    </div>
+    <div class="btn-group">
+        <a href="https://url-shortener.me/J8X6" class="btn">Download IPA (367 MB)</a>
+    </div>
+</div>
+       
         <div class="box app-item" data-type="game">
             <div>
                 <img src="https://i.postimg.cc/zXVLK4TH/unnamed.jpg" class="logo-img">
                 <h2>Dr. Driving Mod</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🚗 تایبەتمەندی:</h4>
-                    ✅ زێڕێ بێسنوور | ✅ ترومبێل ڤکرینە
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🚗 تایبەتمەندیێن مۆدێ:</h4>
+                    ✅ زێڕێ بێسنوور (Unlimited Gold)
+                    <br>✅ هەمی ترومبێل د ڤکرینە
+                    <br>✅ بێ ریکلام (No Ads)
                 </div>
             </div>
             <div class="btn-group">
-                <a href="esign://download?url=https://url-shortener.me/J8XT" class="btn btn-esign">Install via ESign</a>
                 <a href="https://url-shortener.me/J8XT" class="btn">Download IPA (13.3 MB)</a>
             </div>
         </div>
-
+        
         <div class="box app-item" data-type="game">
             <div>
                 <img src="https://i.postimg.cc/bdfjVVvq/unnamed-(3).jpg" class="logo-img">
                 <h2>GTA: SA - RA KURD</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🎮 وەشانا Definitive:</h4>
-                    ✅ بێ بەرامبەر | ✅ چارەسەریا کراشێ
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🎮 وەشانا Definitive:</h4>
+                    ✅ بێ بەرامبەر (Free)
+                    <br>✅ پشتەڤانیا iOS 16 و نویتر
+                    <br>✅ چارەسەریا کراشێ ل iOS 26
                 </div>
             </div>
             <div class="btn-group">
-                <a href="esign://download?url=https://mega.nz/file/RyxWmITI#fWLbue1FBU79KaOjAOonqZ6p66juSneaOCDhq9mglmU" class="btn btn-esign">Install via ESign</a>
                 <a href="https://mega.nz/file/RyxWmITI#fWLbue1FBU79KaOjAOonqZ6p66juSneaOCDhq9mglmU" class="btn">Download IPA (2.5 GB)</a>
             </div>
         </div>
@@ -235,12 +232,11 @@
                 <h2>YouTube Mod</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🚀 تایبەتمەندی:</h4>
-                    ✅ بێ ریکلام | ✅ کارکرن ل پشت پەردێ
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🚀 تایبەتمەندی:</h4>
+                    ✅ بێ ریکلام | ✅ کارکرن ل پشت پەردێ | ✅ Sign-in
                 </div>
             </div>
             <div class="btn-group">
-                <a href="esign://download?url=https://url-shortener.me/J8YL" class="btn btn-esign">Install via ESign</a>
                 <a href="https://url-shortener.me/J8YL" class="btn">Download IPA (124 MB)</a>
             </div>
         </div>
@@ -251,12 +247,11 @@
                 <h2>Pizza Ready Mod</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🛒 ستۆرا بێ بەرامبەر:</h4>
-                    ١. کلیک ل کڕینێ بکە | ٢. ل Cancel بکە.
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🛒 ستۆرا بێ بەرامبەر:</h4>
+                    ١. کلیک ل سەر کڕینێ بکە | ٢. کلیک ل Cancel بکە.
                 </div>
             </div>
             <div class="btn-group">
-                <a href="esign://download?url=https://url-shortener.me/J8YU" class="btn btn-esign">Install via ESign</a>
                 <a href="https://url-shortener.me/J8YU" class="btn">Download IPA (148.23 MB)</a>
             </div>
         </div>
@@ -267,25 +262,25 @@
                 <h2>PicsArt VIP</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                   <h4 style="margin: 0; color: var(--border-color);">🎨 VIP ڤەکری:</h4>
+                   <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🎨 VIP ڤەکری:</h4>
                    هەمی تشت د ڤکرینە و بێ چ کێشە کار دکەن.
                 </div>
             </div>
             <div class="btn-group">
-                <a href="esign://download?url=https://url-shortener.me/J8Z1" class="btn btn-esign">Install via ESign</a>
                 <a href="https://url-shortener.me/J8Z1" class="btn">Download IPA (94.36 MB)</a>
             </div>
         </div>
     </div>
 
     <div id="android-section" class="container hidden">
+        
         <div class="box app-item" data-type="game">
             <div>
                 <img src="https://i.postimg.cc/rp6RCbgK/unnamed-(7).jpg" class="logo-img">
-                <h2>Roblox MOD</h2>
+                <h2>red dead redemption</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);"> ⚔️ تایبەتمەندی:</h4>
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);"> ⚔️ تایبەتمەندی:</h4>
                     ✅ رێدێد بەلاش (Free)
                 </div>
             </div>
@@ -294,20 +289,24 @@
             </div>
         </div>
 
+
+
         <div class="box app-item" data-type="app">
-            <div>
-                <img src="https://i.postimg.cc/rmP9LS9z/unnamed-(2).jpg" class="logo-img">
-                <h2>PicsArt premium</h2>
-                <p class="mod-by">Mod by: Yousif Duski</p>
-                <div class="instruction-card">
-                    <h4 style="margin: 0; color:var(--border-color);">🌟 تایبەتمەندی:</h4>
-                    ✅ Gold Premium Unlocked
-                </div>
-            </div>
-            <div class="btn-group">
-                <a href="https://url-shortener.me/J8ZB" class="btn">Download APK (79.48 MB)</a>
-            </div>
+    <div>
+        <img src="https://i.postimg.cc/rmP9LS9z/unnamed-(2).jpg" class="logo-img" alt="PicsArt Gold">
+        <h2>PicsArt premium</h2>
+        <p class="mod-by">Mod by: Yousif Duski</p>
+        <div class="instruction-card">
+            <h4 style="margin: 0 0 5px 0; color:var(--border-color);">🌟 تایبەتمەندیێن مۆدێ:</h4>
+            ✅ Gold Premium Unlocked
+            <br>✅ هەمی فلتەر و ستیکەر ڤکرینە
+            <br>✅ بێ ڕیکلام (No Ads)
         </div>
+    </div>
+    <div class="btn-group">
+        <a href="https://url-shortener.me/J8ZB" class="btn">Download APK (79.48 MB)</a>
+    </div>
+</div>
         
         <div class="box app-item" data-type="game">
             <div>
@@ -315,8 +314,10 @@
                 <h2>8 Ball Pool Mod</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🎱 تایبەتمەندی (v56.21.1):</h4>
-                    ✅ هێلا درێژ | ✅ مینیۆیا مۆدێ
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🎱 تایبەتمەندیێن مۆدێ (v56.21.1):</h4>
+                    ✅ هێلا درێژ (Long Line)
+                    <br>✅ مینیۆیا مۆدێ (Mod Menu)
+                    <br>✅ لێدانا بێسنوور (Mega Hit)
                 </div>
             </div>
             <div class="btn-group">
@@ -330,8 +331,8 @@
                 <h2>TikTok Premium</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">✨ تایبەتمەندی (v44.5.5):</h4>
-                    ✅ بێ نیشان | ✅ پلەگین ڤەکری
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">✨ تایبەتمەندیێن مۆدێ (v44.5.5):</h4>
+                    ✅ بێ نیشان (No Watermark) | ✅ پلەگین (Plugin) ڤەکری
                 </div>
             </div>
             <div class="btn-group">
@@ -345,8 +346,8 @@
                 <h2>Roblox MOD</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🎮 مۆد مینیۆ (60 تشت):</h4>
-                    ✅ فڕین | ✅ دەربازبوون ژ دیواران
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🎮 مۆد مینیۆ (60 تشت):</h4>
+                    ✅ مینیۆیا مەزن | ✅ فڕین (Fly) | ✅ دەربازبوون ژ دیواران
                 </div>
             </div>
             <div class="btn-group">
@@ -360,8 +361,8 @@
                 <h2>Traffic Racer Pro</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🤖 بێسنوور:</h4>
-                    ✅ پارێ بێسنوور | ✅ ترومبێل ڤکرینە
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🤖 بێسنوور:</h4>
+                    ✅ پارێ بێسنوور | ✅ هەمی ترومبێل د ڤکرینە
                 </div>
             </div>
             <div class="btn-group">
@@ -375,8 +376,8 @@
                 <h2>Minecraft MOD</h2>
                 <p class="mod-by">Mod by: Yousif Duski</p>
                 <div class="instruction-card">
-                    <h4 style="margin: 0; color: var(--border-color);">🔥 مۆد مینیۆ:</h4>
-                    ✅ مینیۆیا مەزن | ✅ نامریت
+                    <h4 style="margin: 0 0 5px 0; color: var(--border-color);">🔥 مۆد مینیۆ:</h4>
+                    ✅ مینیۆیا مەزن | ✅ لێدانا ئۆتۆماتیکی | ✅ نامریت
                 </div>
             </div>
             <div class="btn-group">
