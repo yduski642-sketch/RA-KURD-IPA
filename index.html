@@ -35,7 +35,22 @@
     -ms-user-select: none; /* IE 10+ */
     user-select: none; /* Standard syntax */
  }
-        
+  
+  /* ئەمە ڕێگری دەکات لە دەرکەوتنی مینیو کاتێک دەست لەسەر هەر شتێک ڕادەگریت */
+ * {
+    -webkit-touch-callout: none !important; /* گرنگترین دێڕ بۆ ئایفۆن */
+    -webkit-user-select: none !important;   /* ڕێگری لە دیاریکردنی دەق */
+    user-select: none !important;
+ }
+
+ /* بۆ دڵنیایی زیاتر لەسەر لینک و وێنەکان */
+ a, img, button {
+    -webkit-touch-callout: none !important;
+    pointer-events: auto; /* ڕێگە دەدات تەنها کلیک کار بکات */
+ } 
+
+
+
         .theme-toggle {
             position: fixed;
             top: 20px;
@@ -164,28 +179,19 @@
 </head>
 <body>
 
- <link rel="apple-touch-icon" href="https://i.postimg.cc/PrwCMc4h/unnamed-(17).jpg">
+    
+ 
+<link rel="apple-touch-icon" href="https://i.postimg.cc/PrwCMc4h/unnamed-17.jpg?v=1">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="RA KURD">
+<link rel="icon" type="image/png" sizes="192x192" href="https://i.postimg.cc/PrwCMc4h/unnamed-17.jpg?v=1">
 
+<meta name="apple-mobile-web-app-title" content="RA KURD STORE">
 
-
- <link rel="icon" type="image/png" sizes="192x192" href="https://i.postimg.cc/PrwCMc4h/unnamed-(17).jpg">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#0b0b0b">
-
-
-<link rel="apple-touch-icon" href="ra-store.png">
-<link rel="icon" type="image/png" href="ra-store.png">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="RA KURD">
 
 
     <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
 
+    
     <h1 class="main-title">RA KURD . store</h1>
 
 
@@ -556,6 +562,19 @@
     // لێرەدا دەقەکە بگۆڕە
     alert("🚫 کارەکە سەرکەوتوو نەبووRA KURD قەدەغەیە!");
      });
+
+
+    // ڕێگری لە کلیکی ڕاست و Long Press لە هەموو شوێنێکی سایتەکە
+ document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+ }, false);
+
+ // ڕێگری تایبەت بۆ مۆبایل کاتێک دەست لەسەر شاشە ڕادەگیرێت
+ document.addEventListener('touchstart', function(e) {
+    if (e.target.tagName === 'A' || e.target.tagName === 'IMG') {
+        // دەتوانیت لێرەدا هیچ نەنووسیت یان ئاگادارییەک دابنێیت
+    }
+ }, {passive: true});
 
 
   document.onkeydown = function(e) {
