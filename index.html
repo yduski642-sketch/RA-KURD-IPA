@@ -93,75 +93,73 @@
         }
         
 
-#splash-screen {
+ #splash-screen {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: #0b0b0b; /* ڕەنگی ڕەشی تاریک */
+    background-color: #0b0b0b; /* ڕەنگی ڕەشی تاریک */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    transition: opacity 0.8s ease-out;
-}
+ }
 
-.splash-container {
-    text-align: center;
-}
-
-.logo-wrapper {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto 20px;
+.logo-circle {
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    padding: 5px;
-    background: linear-gradient(45deg, #d4ac0d, #f1c40f); /* ڕەنگی زێڕین */
-    box-shadow: 0 0 30px rgba(212, 172, 13, 0.4);
-    animation: zoomIn 1s ease-out;
-}
+    padding: 3px;
+    background: linear-gradient(45deg, #d4ac0d, #ffd700);
+    box-shadow: 0 0 25px rgba(212, 172, 13, 0.5);
+    animation: pulse 2s infinite ease-in-out; /* جووڵەی لۆگۆکە */
+    margin: 0 auto;
+ }
 
-.splash-logo {
+ .main-logo {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-}
+ }
 
-.splash-title {
+ .welcome-text {
     color: white;
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
     letter-spacing: 2px;
-    margin-top: 15px;
     font-family: 'Noto Sans Arabic', sans-serif;
-    animation: fadeIn 1.5s ease-in;
-}
+    animation: slideUp 1s ease-out forwards; /* جووڵەی نووسینەکە */
+ }
 
-.loading-bar {
-    width: 150px;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px auto 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.progress {
-    width: 100%;
-    height: 100%;
+ /* سێ خاڵە لۆدینگەکە */
+ .loader-dots span {
+    display: inline-block;
+    width: 8px; height: 8px;
+    margin: 10px 3px;
     background: #d4ac0d;
-    animation: loading 2.5s infinite linear;
-}
+    border-radius: 50%;
+    animation: dots 1.4s infinite ease-in-out both;
+ }
+ .loader-dots span:nth-child(1) { animation-delay: -0.32s; }
+ .loader-dots span:nth-child(2) { animation-delay: -0.16s; }
 
-@keyframes zoomIn {
-    from { transform: scale(0.5); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
+ /* پێناسەی جووڵەکان (Animations) */
+ @keyframes pulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(212, 172, 13, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(212, 172, 13, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(212, 172, 13, 0); }
+ }
 
-@keyframes loading {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
-}
+ @keyframes slideUp {
+     from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+ }
 
+ @keyframes dots {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+ }
 
 
         .box { 
@@ -229,8 +227,13 @@
 
     <div id="splash-screen">
     <div class="splash-content">
-        <img src="https://i.postimg.cc/PrwCMc4h/unnamed-(17).jpg" alt="Logo" class="splash-logo">
-        <h1 class="welcome-text">خێرهاتی بۆ RA KURD STORE</h1>
+        <div class="logo-circle">
+            <img src="https://i.postimg.cc/PrwCMc4h/unnamed-(17).jpg" alt="Logo" class="main-logo">
+        </div>
+        <h1 class="welcome-text">RA KURD STORE</h1>
+        <div class="loader-dots">
+            <span></span><span></span><span></span>
+        </div>
     </div>
 </div>
 
@@ -570,11 +573,12 @@
    window.addEventListener('load', function() {
     const splash = document.getElementById('splash-screen');
     setTimeout(() => {
+        splash.style.transition = 'opacity 1s ease';
         splash.style.opacity = '0';
         setTimeout(() => {
             splash.style.display = 'none';
-        }, 800); // کاتی ونبوون
-    }, 2500); // کاتی مانەوەی لۆگۆکە
+        }, 1000);
+    }, 3000); // بۆ ماوەی ٣ چرکە دەمێنێتەوە
  });
 
 
