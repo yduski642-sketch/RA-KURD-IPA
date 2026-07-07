@@ -8,10 +8,10 @@
 			<key>assets</key>
 			<array>
 				<dict>
-					<key>kind</key>
-					<string>software-package</string>
-					<key>url</key>
-					<string>https://github.com/yduski642-sketch/RA-KURD-IPA/releases/download/v29.6.1/MyTV+.-.RA.KURD.store._.Yousif.Duski_v2.6_58437.ipa</string>
+<key>kind</key>
+            <string>software-package</string>
+            <key>url</key>
+            <string>https://github.com/yduski642-sketch/RA-KURD-IPA/releases/download/v29.6.1/Mytv.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
